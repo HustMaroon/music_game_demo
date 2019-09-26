@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14868" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina5_5" orientation="landscape" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14824"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="music_game_demo" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="736" height="414"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="YQV-eF-M8U">
+                                <rect key="frame" x="345" y="334" width="46" height="30"/>
+                                <state key="normal" title="Button"/>
+                                <connections>
+                                    <action selector="play:" destination="BYZ-38-t0r" eventType="touchUpInside" id="5If-eo-1Uo"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="tYs-ib-bFO">
+                                <rect key="frame" x="347" y="263" width="42" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="miss!" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="utZ-Jd-wCf">
+                                <rect key="frame" x="348" y="222" width="40" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstAttribute="bottom" secondItem="YQV-eF-M8U" secondAttribute="bottom" constant="50" id="6Ib-Gs-leq"/>
+                            <constraint firstItem="YQV-eF-M8U" firstAttribute="top" secondItem="tYs-ib-bFO" secondAttribute="bottom" constant="50" id="92m-In-l9p"/>
+                            <constraint firstItem="tYs-ib-bFO" firstAttribute="top" secondItem="utZ-Jd-wCf" secondAttribute="bottom" constant="20" id="KBn-VL-vc2"/>
+                            <constraint firstItem="YQV-eF-M8U" firstAttribute="centerX" secondItem="6Tk-OE-BBY" secondAttribute="centerX" id="Zwv-Mq-RTm"/>
+                            <constraint firstItem="tYs-ib-bFO" firstAttribute="centerX" secondItem="6Tk-OE-BBY" secondAttribute="centerX" id="gFR-db-Dk3"/>
+                            <constraint firstItem="utZ-Jd-wCf" firstAttribute="centerX" secondItem="6Tk-OE-BBY" secondAttribute="centerX" id="lMN-9H-q94"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                    </view>
+                    <toolbarItems/>
+                    <simulatedToolbarMetrics key="simulatedBottomBarMetrics"/>
+                    <connections>
+                        <outlet property="missLabel" destination="utZ-Jd-wCf" id="2z7-Hi-R1r"/>
+                        <outlet property="scoreLabel" destination="tYs-ib-bFO" id="h2d-66-JeG"/>
+                        <outlet property="startButton" destination="YQV-eF-M8U" id="ZTH-Ub-mMs"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="138.58695652173915" y="137.68115942028987"/>
+        </scene>
+    </scenes>
+</document>
